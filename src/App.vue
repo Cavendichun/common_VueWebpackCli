@@ -1,29 +1,22 @@
 <template>
-  <div>
     <div class="app">
-      <json-form :schema="schema" :formData="formData"/>
+        <img src="./logo.png" alt="logo">
     </div>
-  </div>
 </template>
 
 <script>
-import { schema, formData } from "../mockData.js";
-import Form from "./Form/index.vue";
-
-export default {
-  name: "App",
-  components: {
-    "json-form": Form
-  },
-  data() {
-    return {
-      schema,
-      formData
-    };
-  }
-};
+    export default {
+        name: 'App'
+    }
 </script>
 
 <style lang="less">
-@import url('./app.less');
+    * {
+        margin: 0;
+        padding: 0
+    }
+</style>
+
+<style lang="less" scoped>
+    @import url('./app.less');
 </style>
