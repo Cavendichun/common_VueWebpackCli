@@ -2,9 +2,11 @@
     "DEV": {
         "LISTEN_PORT": 9999,
         "BACKEND": "http://127.0.0.1:3000",
-        "TITLE": "testPage"
+        "TITLE": "testPage",
+        "CSS_EXTRACT": false
     },
     "DIST": {
-        "TITLE": "distPage"
+        "TITLE": "distPage",
+        "CSS_EXTRACT": true
     }
 }
